@@ -1,2 +1,2 @@
 # escorbuto
- site de biologia
+ site de biologia criado para apresentar informações sobre a doença
