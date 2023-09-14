@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escorbuto</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        section{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #f0699d;
+            background-Image: url('img/PillIcon.png');
+            background-size: 60px;
+            display: flex;
+            align-items: center;
+        } 
+
+        section img{
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            width: 25%;
+            animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 6s; /* don't forget to set a duration! */
+        }
+
+        section p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 50%;
+            margin-left: 5%;
+            font-size: 2.6em;
+            line-height: 2.4em;
+            color: #d36ee7;
+            padding: 5px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #e9e9e9c9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>Escorbuto é uma doença que é desenvolvida por causa da falta de vinamina C muita comum entre marinheiroscdo século XIX </p>
+        <img src="img/VitaminaC400.avif" alt="">
+    </section>
+</body>
+</html>
