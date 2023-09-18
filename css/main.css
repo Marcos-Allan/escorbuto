@@ -36,7 +36,7 @@ main > section.text{
     opacity: 70%;
     position: relative;
     z-index: 200;
-    padding-bottom: 4%;
+    margin-bottom: 4%;
 }
 
 main > section > p{
