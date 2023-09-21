@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 main {
     width: 100vw;
     background-color: #1B98E0;
@@ -96,4 +100,37 @@ main > section.tTotal > section > img.icon-page {
     right: 0%;
     width: 150px;
     height: auto;
+}
+
+section.menu{
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    background-color: #125d88fe;
+    border-top: 1px solid #FDFFFC;
+    z-index: 201;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+section.menu > a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FDFFFC;
+}
+/* ANIMAÇÕES */
+.animation-section{
+    animation: bounceInDown;
+    /* animation-delay: 1s; */
+    animation-duration: 1s;
+}
+
+.animation-image{
+    animation: bounceInDown;
+    animation-delay: 300ms;
+    animation-duration: 1s;
 }
