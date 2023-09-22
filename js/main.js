@@ -5,6 +5,7 @@ const imgTheme2 = [...document.querySelectorAll('.tema-img-2')]
 const windowHeight = window.innerHeight
 console.log(windowHeight)
 
+window.scrollTo(0, 0);
 
 document.onkeypress = function(e) {
     console.log(e.key);
@@ -22,11 +23,14 @@ setInterval(() => {
     const cordenadas2 = theme2.getBoundingClientRect()
     
     const scrollY = window.pageYOffset;
-
-    if(cordenadas1.y === 0){
+    
+    if(cordenadas1.y >= 0 && cordenadas1.y <= 100){
+        window.scrollTo(0, 0);
         //ADIÇÃO DAS CLASSES
         theme1.classList.add('animation-section')
-        imgTheme1.classList.add('animation-image')
+        theme2.classList.add('opacity-0')
+        
+        theme1.classList.remove('opacity-0')
         //REMOÇÃO DAS CLASSES
         theme2.classList.remove('animation-section')
         imgTheme2.map((img) => {
@@ -34,15 +38,19 @@ setInterval(() => {
         })
     }
     
-    if(cordenadas2.y === 0){
+    if(cordenadas2.y >= 0 && cordenadas2.y <= 100){
+        window.scrollTo(0, windowHeight);
         //ADIÇÃO DAS CLASSES
         theme2.classList.add('animation-section')
         imgTheme2.map((img) => {
             img.classList.add('animation-image')
         })
+
+        theme1.classList.add('opacity-0')
+        theme2.classList.remove('opacity-0')
         //REMOÇÃO DAS CLASSES
         theme1.classList.remove('animation-section')
         imgTheme1.classList.remove('animation-image')
     }
 
-}, 150);
+}, 300);

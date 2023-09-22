@@ -7,7 +7,12 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" media="all">
+
+    <link rel="stylesheet" href="css/portrait.css" media="screen and (orientation: portrait)">
+
+    <link rel="stylesheet" href="css/landscape.css" media="screen and (orientation: landscape)">
+
     <script src="js/main.js" defer></script>
     <title>Escorbuto</title>
 </head>
@@ -21,11 +26,11 @@
             </section>
         </section>
 
-        <section id="sintomas" class="tTotal tema-2">
+        <section id="sintomas" class="tTotal tema-2 opacity-0">
             <h1>Sintomas</h1>
-            <section class="text" style="margin-bottom: 0;">
-                <img class="icon-page tema-img-2" src="img/sneeze.png" alt="icone de um marinheiro" style="right: 0%; width: 120px">
-                <img class="icon-page tema-img-2" src="img/sneeze (1).png" alt="icone de um marinheiro" style="left: 0%; width: 120px;">
+            <section class="text">
+                <img id="img-p2-01" class="icon-page tema-img-2" src="img/sneeze.png" alt="icone de um marinheiro">
+                <img id="img-p2-02" class="icon-page tema-img-2" src="img/sneeze (1).png" alt="icone de um marinheiro">
                 <ol>
                     <li>Má cicatrização</li>
                     <li>Cansaço, Fadiga</li>
@@ -36,10 +41,6 @@
                     <li>Olhos e boca seca</li>
                 </ol>
             </section>
-        </section>
-        <section class="menu">
-            <a href="#home">Home</a>
-            <a href="#sintomas">Sintomas</a>
         </section>
     </main>
 </body>

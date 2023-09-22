@@ -1,0 +1,53 @@
+main > section.tTotal > h1 {
+    padding: 1%;
+    letter-spacing: 2px;
+}
+
+main > section.tTotal > section.text{
+    margin: 5%;
+    width: 86vw;
+    height: 65vh;
+    margin-top: 22%;
+    padding: 5%;
+    line-height: 1.4em;
+    margin-bottom: 19%;
+}
+
+main > section.tTotal > section > p::-webkit-scrollbar{
+    width: 2px;
+}
+
+main > section.tTotal > section{
+    display: flex;
+    justify-content: center;
+}
+
+main > section.tTotal > section > p{
+    width: 100%;
+    height: 70%;
+}
+main > section.tTotal > section > ol{
+    columns: 2;
+    padding-left: 10px;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+main > section.tTotal > section > ol > li{
+    font-size: 0.8em;
+    line-height: 2.3em;
+}
+
+main > section.tTotal > section > img.icon-page {
+    width: 90px;
+}
+
+main > section.tTotal > section > img#img-p2-01{
+    right: 0%;
+    width: 80px;
+}
+
+main > section.tTotal > section > img#img-p2-02{
+    left: 0%;
+    width: 80px;
+}
