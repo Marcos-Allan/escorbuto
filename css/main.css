@@ -103,9 +103,9 @@ main > section.tTotal > section > img.icon-page {
 }
 
 section.menu{
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    bottom: 0;
+    bottom: 0%;
     background-color: #125d88fe;
     border-top: 1px solid #FDFFFC;
     z-index: 201;
@@ -122,7 +122,6 @@ section.menu > a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #FDFFFC;
 }
-
 /* ANIMAÇÕES */
 .animation-section{
     animation: bounceInDown;

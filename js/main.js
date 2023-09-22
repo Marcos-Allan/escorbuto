@@ -3,6 +3,7 @@ const theme2 = document.querySelector('.tema-2')
 const imgTheme1 = document.querySelector('.tema-img-1')
 const imgTheme2 = [...document.querySelectorAll('.tema-img-2')]
 const windowHeight = window.innerHeight
+console.log(windowHeight)
 
 
 document.onkeypress = function(e) {
