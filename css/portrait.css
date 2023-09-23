@@ -18,10 +18,6 @@ main > section.tTotal > section > p::-webkit-scrollbar{
     width: 3px;
 }
 
-main > section.tTotal > section > p::-webkit-scrollbar-thumb{
-    background-color: #1B98E0;
-}
-
 main > section.tTotal > section{
     display: flex;
     justify-content: center;
@@ -37,8 +33,8 @@ main > section.tTotal > section > ol{
 }
 
 main > section.tTotal > section > ol > li{
-    font-size: 1.5em;
-    line-height: 2.3em;
+    font-size: 1.2em;
+    line-height: 2em;
 }
 
 main > section.tTotal > section > img.icon-page {

@@ -33,6 +33,14 @@ main > section.tTotal > section > ol{
     overflow-y: scroll;
 }
 
+main > section.tTotal > section > ol::-webkit-scrollbar{
+    height: 2px
+}
+
+main > section.tTotal > section > ol::-webkit-scrollbar-thumb{
+    background-color: #1B98E0;
+}
+
 main > section.tTotal > section > ol > li{
     font-size: 0.8em;
     line-height: 2.3em;
