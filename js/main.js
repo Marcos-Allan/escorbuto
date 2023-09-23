@@ -10,7 +10,7 @@ window.addEventListener('resize', () => {
     window.scrollTo(0, 0);
     setInterval(() => {
         windowHeight = window.innerHeight
-    }, 100);
+    }, 400);
 })
 
 document.onkeypress = function(e) {
