@@ -14,7 +14,7 @@ setInterval(() => {
     const cordenadas2 = theme2.getBoundingClientRect()
     
     if(cordenadas1.y === 0){
-        window.scrollTo(0, 0);
+        window.scrollTo(0, cordenadas1.y);
         //ADIÇÃO DAS CLASSES
         theme1.classList.add('animation-section')
         theme2.classList.add('opacity-0')
@@ -28,7 +28,7 @@ setInterval(() => {
     }
     
     if(cordenadas2.y === 0){
-        window.scrollTo(0, windowHeight);
+        window.scrollTo(0, cordenadas2.y);
         //ADIÇÃO DAS CLASSES
         theme2.classList.add('animation-section')
         imgTheme2.map((img) => {
