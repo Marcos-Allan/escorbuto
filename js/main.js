@@ -1,6 +1,6 @@
 const theme1 = document.querySelector('.tema-1')
 const theme2 = document.querySelector('.tema-2')
-const imgTheme1 = document.querySelector('.tema-img-1')
+const imgTheme1 = [...document.querySelectorAll('.tema-img-1')]
 const imgTheme2 = [...document.querySelectorAll('.tema-img-2')]
 let windowHeight = window.innerHeight
 
@@ -30,7 +30,9 @@ setInterval(() => {
     if(cordenadas1.y <= 0 && cordenadas1.y >= -10){
         //ADIÇÃO DAS CLASSES
         theme1.classList.add('animation-section')
-        imgTheme1.classList.add('animation-image')
+        imgTheme1.map((img) => {
+            img.classList.add('animation-image')
+        })
         theme2.classList.add('opacity-0')
         theme1.classList.remove('opacity-0')
         //REMOÇÃO DAS CLASSES
@@ -46,12 +48,14 @@ setInterval(() => {
         imgTheme2.map((img) => {
             img.classList.add('animation-image')
         })
-
-        theme1.classList.add('opacity-0')
+        
         theme2.classList.remove('opacity-0')
         //REMOÇÃO DAS CLASSES
         theme1.classList.remove('animation-section')
-        imgTheme1.classList.remove('animation-image')
+        imgTheme1.map((img) => {
+            img.classList.remove('animation-image')
+        })
+        theme1.classList.add('opacity-0')
     }
 
 }, 350);
