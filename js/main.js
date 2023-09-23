@@ -2,13 +2,18 @@ const theme1 = document.querySelector('.tema-1')
 const theme2 = document.querySelector('.tema-2')
 const imgTheme1 = document.querySelector('.tema-img-1')
 const imgTheme2 = [...document.querySelectorAll('.tema-img-2')]
-const windowHeight = window.innerHeight
-console.log(windowHeight)
+let windowHeight = window.innerHeight
 
 window.scrollTo(0, 0);
 
+window.addEventListener('resize', () => {
+    window.scrollTo(0, 0);
+    setInterval(() => {
+        windowHeight = window.innerHeight
+    }, 100);
+})
+
 document.onkeypress = function(e) {
-    console.log(e.key);
     if(e.key == 1){
         window.scrollTo(0, 0);
     }

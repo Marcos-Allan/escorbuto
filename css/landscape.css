@@ -51,12 +51,12 @@ main > section.tTotal > section > img.icon-page {
     width: 90px;
 }
 
-main > section.tTotal > section > img#img-p2-01{
+main > section.tTotal > section > img.img-p2-01{
     right: 0%;
     width: 80px;
 }
 
-main > section.tTotal > section > img#img-p2-02{
+main > section.tTotal > section > img.img-p2-02{
     left: 0%;
     width: 80px;
 }

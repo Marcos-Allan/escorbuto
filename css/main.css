@@ -117,6 +117,19 @@ main > section.tTotal > section > img.icon-page {
     opacity: 0 !important;
 }
 
+main > section.tTotal > #img-pc{
+    position: absolute;
+    display: none;
+}
+
+main > section.tTotal > img.img-p2-01{
+    display: none;
+}
+
+main > section.tTotal > img.img-p2-02{
+    display: none;
+}
+
 /* ANIMAÇÕES */
 .animation-section{
     animation: bounceInDown;

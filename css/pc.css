@@ -1,3 +1,7 @@
+main > section.tTotal {
+    position: relative;
+}
+
 main > section.tTotal > h1 {
     padding: 2%;
     letter-spacing: 2px;
@@ -6,7 +10,7 @@ main > section.tTotal > h1 {
 main > section.tTotal > section.text{
     margin: 5%;
     width: 86vw;
-    height: 82vh;
+    height: 68vh;
     padding: 5%;
     border-radius: 30px;
     line-height: 1.6em;
@@ -22,11 +26,12 @@ main > section.tTotal > section{
 }
 
 main > section.tTotal > section > p{
+    font-size: 1.5em;
     width: 100%;
     height: 70%;
 }
 main > section.tTotal > section > ol{
-    columns: 1;
+    columns: 2;
     padding-left: 10px;
     height: 80%;
     width: 80%;
@@ -40,14 +45,54 @@ main > section.tTotal > section > ol > li{
 
 main > section.tTotal > section > img.icon-page {
     width: 150px;
+    display: none;
+}
+
+main > section.tTotal > section > img#img-p2-01{
+    right: 0%;
+    width: 120px;
+}
+
+main > section.tTotal > section > img#img-p2-02{
+    left: 0%;
+    width: 120px;
+}
+
+main > section.tTotal > #img-pc{
+    position: absolute;
+    display: block;
+    width: 200px;
+    right: 0%;
+    bottom: 0%;
+    z-index: 200;
 }
 
 main > section.tTotal > section > img.img-p2-01{
+    display: none;
     right: 0%;
     width: 120px;
 }
 
 main > section.tTotal > section > img.img-p2-02{
+    display: none;
     left: 0%;
     width: 120px;
+}
+
+main > section.tTotal > img.img-p2-01{
+    display: block;
+    position: absolute;
+    right: 2%;
+    bottom: 6%;
+    width: 120px;
+    z-index: 200;
+}
+
+main > section.tTotal > img.img-p2-02{
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 18%;
+    width: 120px;
+    z-index: 200;
 }
