@@ -8,9 +8,9 @@ window.scrollTo(0, 0);
 
 window.addEventListener('resize', () => {
     window.scrollTo(0, 0);
-    setInterval(() => {
+    setTimeout(() => {
         windowHeight = window.innerHeight
-    }, 400);
+    }, 100);
 })
 
 document.onkeypress = function(e) {
@@ -27,13 +27,11 @@ setInterval(() => {
     const cordenadas1 = theme1.getBoundingClientRect()
     const cordenadas2 = theme2.getBoundingClientRect()
     
-    const scrollY = window.pageYOffset;
-    
     if(cordenadas1.y <= 0 && cordenadas1.y >= -10){
         //ADIÇÃO DAS CLASSES
         theme1.classList.add('animation-section')
+        imgTheme1.classList.add('animation-image')
         theme2.classList.add('opacity-0')
-        
         theme1.classList.remove('opacity-0')
         //REMOÇÃO DAS CLASSES
         theme2.classList.remove('animation-section')
@@ -56,4 +54,4 @@ setInterval(() => {
         imgTheme1.classList.remove('animation-image')
     }
 
-}, 300);
+}, 350);
