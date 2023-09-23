@@ -29,7 +29,7 @@ main > section.tTotal > section > p{
 main > section.tTotal > section > ol{
     columns: 2;
     padding-left: 10px;
-    height: 77%;
+    height: 80%;
     width: 75%;
     overflow-y: scroll;
 }
