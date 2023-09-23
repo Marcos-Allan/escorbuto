@@ -7,10 +7,10 @@ main > section.tTotal > section.text{
     margin: 5%;
     width: 86vw;
     height: 65vh;
-    margin-top: 22%;
+    /* margin-top: 22%; */
     padding: 5%;
     line-height: 1.4em;
-    margin-bottom: 19%;
+    /* margin-bottom: 19%; */
 }
 
 main > section.tTotal > section > p::-webkit-scrollbar{
