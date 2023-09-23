@@ -24,7 +24,7 @@ setInterval(() => {
     
     const scrollY = window.pageYOffset;
     
-    if(cordenadas1.y >= 0 && cordenadas1.y <= 100){
+    if(cordenadas1.y >= 0 && cordenadas1.y <= 50){
         window.scrollTo(0, 0);
         //ADIÇÃO DAS CLASSES
         theme1.classList.add('animation-section')
@@ -38,7 +38,7 @@ setInterval(() => {
         })
     }
     
-    if(cordenadas2.y >= 0 && cordenadas2.y <= 100){
+    if(cordenadas2.y >= 0 && cordenadas2.y <= 50){
         window.scrollTo(0, windowHeight);
         //ADIÇÃO DAS CLASSES
         theme2.classList.add('animation-section')
