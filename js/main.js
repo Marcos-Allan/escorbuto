@@ -29,7 +29,7 @@ setInterval(() => {
     
     const scrollY = window.pageYOffset;
     
-    if(cordenadas1.y === 0){
+    if(cordenadas1.y <= 0 && cordenadas1.y >= -10){
         //ADIÇÃO DAS CLASSES
         theme1.classList.add('animation-section')
         theme2.classList.add('opacity-0')
@@ -42,7 +42,7 @@ setInterval(() => {
         })
     }
     
-    if(cordenadas2.y === 0){
+    if(cordenadas2.y <= 0 && cordenadas2.y >= -10){
         //ADIÇÃO DAS CLASSES
         theme2.classList.add('animation-section')
         imgTheme2.map((img) => {
